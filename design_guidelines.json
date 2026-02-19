@@ -1,0 +1,165 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Jan-Seva (People Service)",
+      "tone": "Trustworthy, Approachable, Optimistic, Clear",
+      "archetype": "The Civic Bridge",
+      "design_principles": [
+        "Clarity over cleverness",
+        "Accessibility first (high contrast, large targets)",
+        "Mobile-first interaction",
+        "Civic Optimism (colors that inspire hope, not bureaucracy)"
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "DM Serif Display, serif",
+        "body": "Public Sans, sans-serif"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground uppercase tracking-wider"
+      },
+      "imports": [
+        "@fontsource/dm-serif-display",
+        "@fontsource/public-sans"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#1e3a8a",
+          "foreground": "#ffffff",
+          "hover": "#172554",
+          "description": "Deep Royal Blue - Trust, Stability, Authority"
+        },
+        "secondary": {
+          "DEFAULT": "#ea580c",
+          "foreground": "#ffffff",
+          "hover": "#c2410c",
+          "description": "Vibrant Saffron - Energy, Action, Context"
+        },
+        "background": {
+          "DEFAULT": "#fcfbf9",
+          "paper": "#ffffff",
+          "subtle": "#f3f4f6"
+        },
+        "text": {
+          "primary": "#0f172a",
+          "secondary": "#475569",
+          "muted": "#94a3b8"
+        },
+        "status": {
+          "success": "#059669",
+          "warning": "#d97706",
+          "error": "#dc2626"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-br from-[#fcfbf9] via-[#e0f2fe] to-[#fcfbf9]",
+        "card_hover": "hover:bg-gradient-to-br hover:from-white hover:to-blue-50"
+      }
+    },
+    "layout": {
+      "spacing_scale": {
+        "section_gap": "gap-12 md:gap-24",
+        "component_gap": "gap-6 md:gap-8",
+        "internal_padding": "p-6 md:p-8"
+      },
+      "container": "container mx-auto px-4 md:px-6 max-w-7xl",
+      "radius": {
+        "default": "rounded-xl",
+        "large": "rounded-2xl",
+        "pill": "rounded-full"
+      },
+      "grids": {
+        "landing_hero": "grid grid-cols-1 md:grid-cols-12 gap-6",
+        "schemes_list": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+        "dashboard": "grid grid-cols-1 lg:grid-cols-4 gap-8"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#ea580c] hover:bg-[#c2410c] text-white font-medium px-8 py-3 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5",
+        "secondary": "bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] hover:bg-blue-50 font-medium px-8 py-3 rounded-full transition-all",
+        "ghost": "text-[#1e3a8a] hover:bg-blue-50 hover:text-[#172554] px-4 py-2 rounded-lg"
+      },
+      "cards": {
+        "scheme": "bg-white border border-slate-200 rounded-xl p-6 hover:shadow-xl transition-all hover:border-blue-200 group relative overflow-hidden",
+        "quiz_option": "bg-white border-2 border-slate-200 rounded-xl p-6 cursor-pointer hover:border-[#1e3a8a] hover:bg-blue-50 transition-all flex items-center justify-between data-[state=checked]:border-[#1e3a8a] data-[state=checked]:bg-blue-50"
+      },
+      "inputs": {
+        "default": "h-12 rounded-lg border-slate-300 focus:ring-2 focus:ring-[#1e3a8a] focus:border-transparent bg-white text-lg",
+        "label": "text-sm font-medium text-slate-700 mb-2 block"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_main": {
+          "url": "https://images.unsplash.com/flagged/photo-1579503429289-6de86c9fc2de?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Two diverse Indian women smiling, representing unity and access",
+          "usage": "Hero section main visual"
+        },
+        "farmer_success": {
+          "url": "https://images.pexels.com/photos/32277759/pexels-photo-32277759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Happy Indian farmer with crops",
+          "usage": "Testimonial or 'Who is this for' section"
+        },
+        "student_focus": {
+          "url": "https://images.unsplash.com/photo-1749793299204-462f634e53cc?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Young students smiling",
+          "usage": "Education schemes category"
+        },
+        "senior_citizen": {
+          "url": "https://images.pexels.com/photos/35854307/pexels-photo-35854307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Joyful senior woman",
+          "usage": "Senior citizen pension schemes category"
+        }
+      },
+      "icons": {
+        "library": "lucide-react",
+        "style": "Stroke width 2px, rounded joins",
+        "color": "text-[#1e3a8a]"
+      }
+    },
+    "accessibility": {
+      "contrast_check": "Ensure 4.5:1 ratio for normal text. Use slate-700+ for gray text on white.",
+      "focus_states": "ring-2 ring-offset-2 ring-[#ea580c] outline-none",
+      "touch_targets": "min-h-[48px] min-w-[48px] for all interactive elements",
+      "labels": "Always visible, never just placeholders"
+    },
+    "motion": {
+      "reduced_motion": "respect-prefers-reduced-motion",
+      "page_transition": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}",
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-200"
+    }
+  },
+  "implementation_guide": {
+    "file_structure": {
+      "pages": "/app/frontend/src/pages",
+      "components": "/app/frontend/src/components",
+      "ui_lib": "/app/frontend/src/components/ui",
+      "layouts": "/app/frontend/src/layouts"
+    },
+    "required_packages": [
+      "lucide-react",
+      "framer-motion",
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-progress"
+    ],
+    "universal_rules": [
+      "Don't use gradients for text.",
+      "Use 'Public Sans' for all UI text, 'DM Serif Display' ONLY for h1/h2 headings.",
+      "Primary button color is ALWAYS Orange (#ea580c) for high visibility.",
+      "Forms must use distinct, bordered inputs, not just underlines.",
+      "Quiz steps must be one-at-a-time on mobile.",
+      "All images must have alt text."
+    ]
+  }
+}
